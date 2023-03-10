@@ -1,23 +1,23 @@
- SELECT * FROM student_manager.new_table;
- 
- 
- use student_manager;
- insert into new_table
- value (1,'thang');
- 
- 
- update new_table
- set name = 'tan'
- where id = 1;
- 
- alter table new_table
- add column diem int;
- 
- update new_table
- set diem = 10
- where id = 1;
- 
- alter table new_table
- change name fullName varchar(100)
- 
- 
+create database student_manager;
+
+
+create table class(
+id int,
+full_Name varchar(255)
+);
+
+select * from class;
+insert into class( id , full_Name)
+value (1,'Thang');
+
+create table teacher(
+id int,
+full_name varchar(255),
+age int,
+country varchar(255)
+);
+
+select* from class;
+insert into teacher(id,full_name,age,country)
+value(1,'thua',28,'Viet Nam')
+
